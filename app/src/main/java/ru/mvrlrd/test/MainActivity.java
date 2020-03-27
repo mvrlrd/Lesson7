@@ -9,10 +9,12 @@ import android.os.Bundle;
 // Протестировать этот метод.
 // Положительный и отрицательный сценарий
 public class MainActivity extends AppCompatActivity {
+    Presenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+         presenter = new Presenter();
     }
 }
